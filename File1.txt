@@ -1,0 +1,244 @@
+i, Swedish, deep tissue and hot stone massage therapies.">
+  <meta name="theme-color" content="#173b32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#173b32;--green2:#244e42;--gold:#c9a96a;--cream:#f7f2e9;--ink:#17201d;--muted:#69736e;--white:#fff;--shadow:0 20px 50px rgba(20,46,38,.12)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Manrope,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.65;overflow-x:hidden}
+    img{width:100%;display:block;object-fit:cover}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1160px,calc(100% - 40px));margin:auto}
+    .eyebrow{font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700}
+    h1,h2,h3{font-family:"Cormorant Garamond",serif;line-height:1.05}
+    h2{font-size:clamp(2.35rem,5vw,4rem);margin:12px 0 18px}
+    p{color:var(--muted)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:700;transition:.25s;border:1px solid transparent}
+    .btn-primary{background:var(--gold);color:#18221e}
+    .btn-primary:hover{transform:translateY(-2px);background:#d7b97e}
+    .btn-outline{border-color:rgba(255,255,255,.45);color:#fff}
+    .btn-outline:hover{background:#fff;color:var(--green)}
+    header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(17,47,39,.88);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.1)}
+    nav{height:78px;display:flex;align-items:center;justify-content:space-between}
+    .logo{display:flex;align-items:center;gap:12px;color:white}
+    .mark{width:44px;height:44px;border:1px solid rgba(201,169,106,.65);border-radius:50%;display:grid;place-items:center;font-family:"Cormorant Garamond";font-size:1.55rem;color:var(--gold)}
+    .logo strong{font-family:"Cormorant Garamond";font-size:1.45rem;letter-spacing:.03em}
+    .logo small{display:block;font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:#d7d8d2}
+    .links{display:flex;align-items:center;gap:28px;color:#f2f4f1;font-size:.9rem}
+    .links a:hover{color:var(--gold)}
+    .menu{display:none;color:white;font-size:1.5rem}
+    .hero{min-height:100vh;display:grid;align-items:center;position:relative;background:
+      linear-gradient(90deg,rgba(8,30,24,.92) 0%,rgba(8,30,24,.74) 43%,rgba(8,30,24,.2) 75%),
+      url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1900&q=88') center/cover no-repeat;color:white}
+    .hero::after{content:"";position:absolute;inset:auto 0 0;height:160px;background:linear-gradient(transparent,rgba(8,30,24,.25))}
+    .hero-content{padding-top:90px;max-width:690px;position:relative;z-index:2}
+    .hero h1{font-size:clamp(3.6rem,8vw,7rem);font-weight:600;margin:16px 0 22px}
+    .hero p{font-size:1.08rem;color:#e4e9e6;max-width:600px}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+    .trust{display:flex;gap:34px;flex-wrap:wrap;margin-top:46px;padding-top:28px;border-top:1px solid rgba(255,255,255,.2)}
+    .trust strong{display:block;font-family:"Cormorant Garamond";font-size:1.65rem;color:#fff}
+    .trust span{font-size:.8rem;color:#cbd5d0}
+    section{padding:100px 0}
+    .intro{background:var(--cream)}
+    .intro-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}
+    .photo-stack{position:relative;padding:0 45px 45px 0}
+    .photo-stack img{height:560px;border-radius:190px 190px 18px 18px;box-shadow:var(--shadow)}
+    .photo-stack .mini{position:absolute;width:220px;height:270px;right:0;bottom:0;border:8px solid var(--cream);border-radius:18px}
+    .check-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:28px 0}
+    .check{padding:14px 16px;background:white;border-radius:12px;font-size:.9rem;box-shadow:0 8px 25px rgba(20,46,38,.06)}
+    .services-head{text-align:center;max-width:700px;margin:0 auto 48px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .card{border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 12px 40px rgba(20,46,38,.09);transition:.3s}
+    .card:hover{transform:translateY(-7px)}
+    .card img{height:245px}
+    .card-body{padding:26px}
+    .card h3{font-size:2rem;margin-bottom:8px}
+    .card .link{color:var(--green);font-weight:700;display:inline-block;margin-top:18px}
+    .experience{background:var(--green);color:white}
+    .experience-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+    .experience p{color:#cbd6d1}
+    .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+    .feature{border:1px solid rgba(255,255,255,.14);padding:22px;border-radius:14px}
+    .feature b{display:block;color:#fff;margin-bottom:6px}
+    .experience img{height:600px;border-radius:18px}
+    .gallery{display:grid;grid-template-columns:1.25fr .75fr .75fr;grid-template-rows:250px 250px;gap:14px}
+    .gallery img{height:100%;border-radius:14px}
+    .gallery img:first-child{grid-row:1/3}
+    .reviews{background:var(--cream)}
+    .review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+    .review{background:white;padding:30px;border-radius:16px;box-shadow:0 10px 30px rgba(20,46,38,.06)}
+    .stars{color:#c3963f;letter-spacing:3px;margin-bottom:14px}
+    .review p{font-size:.94rem}
+    .review strong{display:block;margin-top:18px}
+    .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:stretch}
+    .contact-card{background:var(--green);color:white;padding:42px;border-radius:20px}
+    .contact-card p{color:#cbd6d1}
+    .info{margin-top:28px;display:grid;gap:22px}
+    .info b{display:block;color:var(--gold);font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;margin-bottom:5px}
+    iframe{width:100%;height:100%;min-height:460px;border:0;border-radius:20px}
+    footer{background:#0e2821;color:#ced8d3;padding:32px 0}
+    .footer{display:flex;justify-content:space-between;gap:24px;align-items:center;font-size:.82rem}
+    .floating{position:fixed;right:22px;bottom:22px;z-index:60;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:white;font-size:1.6rem;box-shadow:0 12px 30px rgba(0,0,0,.22)}
+
+    .booking-form{background:#fff;padding:34px;border-radius:20px;box-shadow:var(--shadow)}
+    .booking-form h3{font-size:2.3rem;margin-bottom:8px}.booking-form>p{margin-bottom:22px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:.82rem;font-weight:700;color:var(--green)}
+    .field input,.field select,.field textarea{width:100%;padding:14px 15px;border:1px solid #d9dfdc;border-radius:11px;font:inherit;background:#fbfcfb;outline:none}
+    .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,169,106,.15)}
+    .field textarea{min-height:105px;resize:vertical}.form-note{font-size:.76rem;margin-top:12px}
+    @media(max-width:900px){
+      .links{display:none}.menu{display:block}.intro-grid,.experience-grid,.contact-grid{grid-template-columns:1fr}.cards,.review-grid{grid-template-columns:1fr 1fr}.photo-stack img{height:480px}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:260px 220px}.gallery img:first-child{grid-column:1/3;grid-row:auto}
+    }
+    @media(max-width:620px){
+      .container{width:min(100% - 28px,1160px)}section{padding:72px 0}.hero{min-height:92vh;background-position:62% center}.hero h1{font-size:3.6rem}.hero-actions .btn{width:100%}.trust{gap:20px}.intro-grid{gap:45px}.photo-stack{padding:0}.photo-stack img{height:430px}.photo-stack .mini{display:none}.cards,.review-grid,.feature-grid,.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.check-list{grid-template-columns:1fr}.gallery{display:grid;grid-template-columns:1fr;grid-template-rows:none}.gallery img,.gallery img:first-child{height:260px;grid-column:auto}.experience img{height:430px}.contact-card{padding:30px 24px}.footer{flex-direction:column;text-align:center}.logo strong{font-size:1.25rem}}
+  </style>
+</head>
+<body>
+<header>
+  <nav class="container">
+    <a class="logo" href="#home"><span class="mark">7</span><span><strong>Seven Stone Spa</strong><small>Marathahalli · Bangalore</small></span></a>
+    <div class="links"><a href="#about">About</a><a href="#services">Therapies</a><a href="#gallery">Gallery</a><a href="#booking">Book</a><a href="#contact">Contact</a><a class="btn btn-primary" href="https://wa.me/916363943839?text=Hello%20Seven%20Stone%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank">Book Now</a></div>
+    <div class="menu">☰</div>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <div class="eyebrow">Luxury wellness in Marathahalli</div>
+    <h1>Pause. Breathe.<br>Feel Renewed.</h1>
+    <p>Step into a calm, comforting space created for complete relaxation. Discover personalised spa therapies delivered by trained professionals in a clean and soothing environment.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://wa.me/916363943839?text=Hello%20Seven%20Stone%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank">Book on WhatsApp</a>
+      <a class="btn btn-outline" href="tel:+916363943839">Call +91 63639 43839</a>
+    </div>
+    <div class="trust"><div><strong>4.7/5</strong><span>Customer rating</span></div><div><strong>212+</strong><span>Ratings on Justdial</span></div><div><strong>10 AM–9:30 PM</strong><span>Open all days</span></div></div>
+  </div>
+</section>
+
+<section class="intro" id="about">
+  <div class="container intro-grid">
+    <div class="photo-stack">
+      <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1000&q=85" alt="Relaxing luxury spa treatment room">
+      <img class="mini" src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=700&q=85" alt="Spa towels and wellness essentials">
+    </div>
+    <div>
+      <div class="eyebrow">Welcome to Seven Stone Spa</div>
+      <h2>Your private escape from the everyday</h2>
+      <p>Located beside Jeevika Hospital in Marathahalli, Seven Stone Spa offers carefully selected massage and body-care experiences designed to help ease stress, release muscle tension and restore a sense of balance.</p>
+      <div class="check-list">
+        <div class="check">✓ Trained professionals</div><div class="check">✓ Clean & hygienic rooms</div>
+        <div class="check">✓ Calm private ambience</div><div class="check">✓ Personalised therapies</div>
+      </div>
+      <a class="btn btn-primary" href="#services">Explore Therapies</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="services-head"><div class="eyebrow">Signature therapies</div><h2>Relaxation, tailored to you</h2><p>Choose from restorative treatments created to relax the body, calm the mind and leave you feeling refreshed.</p></div>
+    <div class="cards">
+      <article class="card"><img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=900&q=85" alt="Aromatherapy massage"><div class="card-body"><h3>Aroma Massage</h3><p>A soothing full-body experience using aromatic oils to encourage deep relaxation and reduce everyday stress.</p><a class="link" href="https://wa.me/916363943839?text=I%20would%20like%20to%20book%20an%20Aroma%20Massage." target="_blank">Book this therapy →</a></div></article>
+      <article class="card"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=85" alt="Thai massage therapy"><div class="card-body"><h3>Thai Massage</h3><p>A traditional therapy combining assisted stretches and pressure techniques to support flexibility and energy flow.</p><a class="link" href="https://wa.me/916363943839?text=I%20would%20like%20to%20book%20a%20Thai%20Massage." target="_blank">Book this therapy →</a></div></article>
+      <article class="card"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=85" alt="Deep tissue massage"><div class="card-body"><h3>Deep Tissue</h3><p>Focused pressure for tired muscles and deeper tension, ideal after long workdays, travel or physical activity.</p><a class="link" href="https://wa.me/916363943839?text=I%20would%20like%20to%20book%20a%20Deep%20Tissue%20Massage." target="_blank">Book this therapy →</a></div></article>
+      <article class="card"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=85" alt="Swedish massage"><div class="card-body"><h3>Swedish Massage</h3><p>Gentle, flowing massage strokes that promote relaxation, circulation and a light, refreshed feeling.</p><a class="link" href="https://wa.me/916363943839?text=I%20would%20like%20to%20book%20a%20Swedish%20Massage." target="_blank">Book this therapy →</a></div></article>
+      <article class="card"><img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=900&q=85" alt="Hot stone massage"><div class="card-body"><h3>Hot Stone Therapy</h3><p>Warm stones and calming massage techniques help loosen tight muscles and create a deeply comforting experience.</p><a class="link" href="https://wa.me/916363943839?text=I%20would%20like%20to%20book%20Hot%20Stone%20Therapy." target="_blank">Book this therapy →</a></div></article>
+      <article class="card"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85" alt="Body care spa treatment"><div class="card-body"><h3>Premium Body Spa</h3><p>A complete pampering ritual combining body care and relaxation for a smoother, brighter and renewed feeling.</p><a class="link" href="https://wa.me/916363943839?text=I%20would%20like%20to%20book%20a%20Premium%20Body%20Spa." target="_blank">Book this therapy →</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="experience">
+  <div class="container experience-grid">
+    <div><div class="eyebrow">The Seven Stone experience</div><h2>A calmer space for a better you</h2><p>Every visit is designed around your comfort—from the first welcome to the final moment of relaxation.</p>
+      <div class="feature-grid"><div class="feature"><b>Personal consultation</b><span>Therapy suggestions based on your comfort and relaxation goals.</span></div><div class="feature"><b>Peaceful ambience</b><span>Warm lighting, calming interiors and private treatment spaces.</span></div><div class="feature"><b>Quality care</b><span>Professional techniques and carefully selected spa essentials.</span></div><div class="feature"><b>Easy booking</b><span>Reserve your preferred appointment quickly through WhatsApp.</span></div></div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1100&q=88" alt="Professional spa ambience">
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="container">
+    <div class="services-head"><div class="eyebrow">Our ambience</div><h2>Designed for peace and comfort</h2></div>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1100&q=85" alt="Luxury spa room">
+      <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=800&q=85" alt="Spa wellness essentials">
+      <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=85" alt="Professional massage therapy">
+      <img src="https://images.unsplash.com/photo-1591343395082-e120087004b4?auto=format&fit=crop&w=800&q=85" alt="Relaxation spa setup">
+      <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=800&q=85" alt="Hot stone wellness treatment">
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="container"><div class="services-head"><div class="eyebrow">Guest feedback</div><h2>Loved for relaxation and care</h2><p>Public reviews frequently highlight the relaxing sessions, cleanliness and professional staff.</p></div>
+    <div class="review-grid">
+      <div class="review"><div class="stars">★★★★★</div><p>“A relaxing and comfortable experience. The rooms were neat, the massage was effective and the overall service felt welcoming.”</p><strong>Guest review</strong></div>
+      <div class="review"><div class="stars">★★★★★</div><p>“Professional staff, calming ambience and a clean setup. A good place to unwind after a stressful week.”</p><strong>Guest review</strong></div>
+      <div class="review"><div class="stars">★★★★★</div><p>“The therapy helped with muscle tension and left me feeling refreshed. Booking in advance is recommended.”</p><strong>Guest review</strong></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="booking" class="intro">
+  <div class="container contact-grid">
+    <div>
+      <div class="eyebrow">Quick appointment request</div>
+      <h2>Tell us when you’d like to visit</h2>
+      <p>Complete the form and it will open WhatsApp with your appointment details ready to send to Seven Stone Spa.</p>
+      <div class="check-list"><div class="check">✓ Fast WhatsApp confirmation</div><div class="check">✓ Select your preferred therapy</div><div class="check">✓ Choose date and time</div><div class="check">✓ No online payment required</div></div>
+    </div>
+    <form class="booking-form" id="spaForm">
+      <h3>Book your spa session</h3><p>We’ll confirm availability on WhatsApp.</p>
+      <div class="form-grid">
+        <div class="field"><label for="name">Full name</label><input id="name" required placeholder="Your name"></div>
+        <div class="field"><label for="phone">Phone number</label><input id="phone" type="tel" required placeholder="Your mobile number"></div>
+        <div class="field"><label for="therapy">Preferred therapy</label><select id="therapy" required><option value="">Select therapy</option><option>Aroma Massage</option><option>Thai Massage</option><option>Deep Tissue Massage</option><option>Swedish Massage</option><option>Hot Stone Therapy</option><option>Premium Body Spa</option><option>Need a recommendation</option></select></div>
+        <div class="field"><label for="date">Preferred date</label><input id="date" type="date" required></div>
+        <div class="field"><label for="time">Preferred time</label><input id="time" type="time" required></div>
+        <div class="field"><label for="guests">Number of guests</label><select id="guests"><option>1 guest</option><option>2 guests</option></select></div>
+        <div class="field full"><label for="message">Special request</label><textarea id="message" placeholder="Tell us about pressure preference, body pain or any special request"></textarea></div>
+        <div class="field full"><button class="btn btn-primary" type="submit">Send Appointment Request on WhatsApp</button></div>
+      </div><p class="form-note">Submitting this form opens WhatsApp. Your booking is confirmed only after the spa replies.</p>
+    </form>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact-grid">
+    <div class="contact-card"><div class="eyebrow">Visit or book today</div><h2>Make time for yourself</h2><p>Message us on WhatsApp to check availability and reserve your preferred therapy.</p>
+      <div class="info">
+        <div><b>Address</b>#44, EL SHADDAI TOWER, Beside Jeevika Hospital, 4th Cross Ananthramreddy Layout, Marathahalli, Bengaluru 560037</div>
+        <div><b>Phone & WhatsApp</b><a href="tel:+916363943839">+91 63639 43839</a></div>
+        <div><b>Opening hours</b>Monday–Sunday · 10:00 AM–9:30 PM</div>
+      </div>
+      <div class="hero-actions"><a class="btn btn-primary" href="https://wa.me/916363943839?text=Hello%20Seven%20Stone%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank">WhatsApp Us</a><a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Seven+Stone+Spa+Marathahalli+Bengaluru" target="_blank">Get Directions</a></div>
+    </div>
+    <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Seven%20Stone%20Spa%20Marathahalli%20Bengaluru&output=embed" title="Seven Stone Spa Google Map"></iframe>
+  </div>
+</section>
+</main>
+
+<footer><div class="container footer"><span>© 2026 Seven Stone Spa. All rights reserved.</span><span>Luxury spa & wellness · Marathahalli, Bengaluru</span></div></footer>
+<a class="floating" href="https://wa.me/916363943839?text=Hello%20Seven%20Stone%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" aria-label="Book on WhatsApp">✆</a>
+
+<script>
+  document.getElementById('spaForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const get=id=>document.getElementById(id).value.trim();
+    const text=`Hello Seven Stone Spa, I would like to request an appointment.%0A%0AName: ${encodeURIComponent(get('name'))}%0APhone: ${encodeURIComponent(get('phone'))}%0ATherapy: ${encodeURIComponent(get('therapy'))}%0ADate: ${encodeURIComponent(get('date'))}%0ATime: ${encodeURIComponent(get('time'))}%0AGuests: ${encodeURIComponent(get('guests'))}%0ASpecial request: ${encodeURIComponent(get('message') || 'None')}`;
+    window.open('https://wa.me/916363943839?text='+text,'_blank');
+  });
+  document.getElementById('date').min = new Date().toISOString().split('T')[0];
+</script>
+
+</body>
+</html>
+
+
+
